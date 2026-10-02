@@ -1,12 +1,9 @@
-import typing
-
-from amrita.plugins.chat.runtime import AmritaChatObject
+from amrita.plugins.chat.runtime import try_get_amrita_ctx
 from amrita_core import (
     ToolContext,
     on_tools,
 )
 from nonebot import get_bot, logger
-from nonebot.adapters.onebot.v11 import MessageEvent
 
 from .cache import cache_omikuji, get_cached_omikuji
 from .config import get_config
@@ -37,8 +34,13 @@ def format_omikuji(data: OmikujiData, user_name: str | None = ""):
 @on_tools(FUNC_DEFINTION, custom_run=True, strict=True)
 async def omikuji(ctx: ToolContext) -> str:
     logger.info("获取御神签")
-    obj: AmritaChatObject = typing.cast(AmritaChatObject, ctx.event.chat_object)
-    nb_event: MessageEvent = obj.event
+    chat_object = ctx.ctx.chat_object
+    if chat_object is None:
+        raise RuntimeError("御神签需要会话上下文，但当前工具调用没有 chat_object")
+    amrita_ctx = try_get_amrita_ctx(chat_object)
+    if amrita_ctx is None:
+        raise RuntimeError("御神签只能在 Amrita Bot 会话中使用")
+    nb_event = amrita_ctx["event"]
     is_group = hasattr(nb_event, "group_id")
     bot = get_bot(str(nb_event.self_id))
 
