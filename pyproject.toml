@@ -17,9 +17,9 @@ license = "GPL-3.0-or-later"
 keywords = ["chat", "nonebot"]
 
 [project.urls]
-"Homepage" = "https://github.com/AmritaBot/amrita_plugin_omikuji"
-"Source" = "https://github.com/AmritaBot/amrita_plugin_omikuji"
-"Issue Tracker" = "https://github.com/AmritaBot/amrita_plugin_omikuji/issues"
+"Homepage" = "https://github.com/AmritaBot/plugin-omikuji"
+"Source" = "https://github.com/AmritaBot/plugin-omikuji"
+"Issue Tracker" = "https://github.com/AmritaBot/plugin-omikuji/issues"
 
 [tool.setuptools.packages.find]
 include = ["amrita_plugin_omikuji*"]

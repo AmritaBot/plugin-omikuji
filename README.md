@@ -1,5 +1,5 @@
 <div align="center">
-  <a href="https://github.com/JohnRichard4096/amrita_plugin_omikuji/">
+  <a href="https://github.com/AmritaBot/plugin-omikuji/">
     <img src="https://github.com/user-attachments/assets/b5162036-5b17-4cf4-b0cb-8ec842a71bc6" width="200" alt="omikuji Logo">
   </a>
   <h1>Omikuji</h1>
@@ -16,7 +16,7 @@
       <img src="https://img.shields.io/badge/nonebot2-2.4.3+-blue?style=flat-square" alt="NoneBot Version">
     </a>
     <a href="LICENSE">
-      <img src="https://img.shields.io/github/license/AmritaBot/amrita_plugin_omikuji?style=flat-square" alt="License">
+      <img src="https://img.shields.io/github/license/AmritaBot/plugin-omikuji?style=flat-square" alt="License">
     </a>
     <a href="https://qm.qq.com/q/5URbtujxx6">
       <img src="https://img.shields.io/badge/QQ%E7%BE%A4-1006893368-blue?style=flat-square" alt="QQ Group">
@@ -26,7 +26,7 @@
 
 ## 🌸 简介
 
-**Omikuji（御神签）** 是一款基于大型语言模型（LLM）的 [NoneBot2](https://nonebot.dev/) 插件，专为 [AmritaBot](https://github.com/AmritaBot/Amrita) 框架设计。该插件为用户提供传统日本神社抽签体验的现代化数字版本，通过 AI 生成个性化、富有文化氛围的签文。
+**Omikuji（御神签）** 是一款基于大型语言模型（LLM）的 [NoneBot2](https://nonebot.dev/) 插件，专为 [AmritaBot](https://github.com/AmritaBot/AmritaBot) 框架设计。该插件为用户提供传统日本神社抽签体验的现代化数字版本，通过 AI 生成个性化、富有文化氛围的签文。
 
 御神签（おみくじ）是日本神道教中一种传统的占卜方式，参拜者在神社或寺庙中摇动签筒，随机抽取一支签，上面写着对未来的预言或建议。本插件将这一传统文化与现代 AI 技术相结合，每次抽取都会根据主题和运势等级生成独特的签文内容。
 
